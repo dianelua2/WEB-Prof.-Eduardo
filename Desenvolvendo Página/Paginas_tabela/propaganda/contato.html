@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="uft-8">
+        <title>Formulário</title>
+
+        <script>
+            function Enviar(){
+                var nome = document.getElementById("nomeId");
+                var email = document.getElementById("emailId");
+                var mensagem = document.getElementById("mensagemId");
+
+                if(nome.value != ""){
+                    alert('Obrigado Sr(a). ' + nome.value + ' E-mail: '
+                + email.value + ' pelo envio da mensagem:' + mensagem. value );
+                }
+            }
+        </script>
+    </head>
+    <body>
+       
+    <table border="1" width="100%" height="60px" bgcolor="#c8a2c8">
+        <tr aling="center">
+            <td><a href="unhas_belas.html"> Home</a></td>
+            <td><a href="quemsomos.html"> Quem Somos</a></td>
+            <td><a href="historia.html"> História</a></td>
+            <td><a href ="produtos.html" >Produtos</a></td>
+            <td><a href ="contato.html" >Contatos</a></td>
+           </tr>
+    </table>
+    <table border="1" width="100%" height="600px" bgcolor="#cccddd">
+        <tr>
+            <td colspan="5"><font size="50px">
+                <form name="meu_form">
+                    <p><label> Nome:</label></p>
+                    <p><input type="text" id="nomeId" name="nome"></p>
+                    <p><label>E-mail:</label></p>
+                    <p><input type="email" id= "emailId" name="email"></p>
+                    <p><label>Mensagem:</label></p>
+                    <p><textarea id="mensagemId" name="mensagem"></textarea></p>
+                    <p><input type="submit" onclick="Enviar();" value="Enviar"></p>
+                </form>
+        </font></td>
+    </tr>
+    </table>
+    <table border="1" width="100%" height="60px" bgcolor="#cccddd">
+       <tr> 
+        <td colspan="5"><font size="50px">
+            rodapé
+        </font></td>
+    </tr>
+    </table>
+    </body>
+</html>
