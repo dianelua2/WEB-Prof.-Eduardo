@@ -8,26 +8,91 @@
     <title>Bootstrap -Teste final</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-<section>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" herf="#">MENU</a>
-            <button class="navbar-toggler" type="button" 
-            data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false"
-                aria-label="Toggler navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <a>Home</a>
-        <a>Fotos</a>
-        <a>Quem Somos</a>
-        <a>Contato</a>
+    <section>
+        <br>
+        <div>
+            <table border="8" width="100%" height="50px" bgcolor="#FFFAFA">
+                <tr align="center">
+                    <td><a href="index.html">HOME</a></td>
+                    <td><a href="fotos.html">FOTOS</a></td>
+                    <td><a href="quemsomos.html">QUEM SOMOS</a></td>
+                    <td><a href="contato.html">CONTATO</a></td>
+                </tr>
+            </table>
         </div>
+    </section>
+
+    <section>
+        <table border="8" width="100%" height="5px" bgcolor="#FFFAFA">
+            <div id="carousel-de-imagens" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="carrosel-de-imagens" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="carrosel-de-imagens" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="carrosel-de-imagens" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+             </div>
+             <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img1.jpeg" width="1080px" height="600px" class="d-block w-100" alt="leão">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> Banner 01</h5>
+                        <p>Exemplo de Banner.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img2.jpg"  width="1080px" height="600px" class="d-block w-100" alt="cidade">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Banner 02</h5>
+                        <p>Exemplo de Banner.</p>
+                    </div>
+                </div>
+              <div class="carousel-item">
+                <img src="img3.jpg" width="1080px" height="600px" class="d-block w-100" alt="cidade">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Banner 03</h5>
+                    <p>Exemplo de Banner</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide="next">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+            
+        </div>
+    </table>
+</section>
+<section>
+   
+
+<section>
+    <table border="8"width="100%" height="5px" bgcolor="#FFFAFA">
+        <div class="grid gap-3">
+            <img src="Intergate-Blog-Missao-Visao-Valores.webp" width="1080px" height="600px" class="rounded fload-star" alt="leão"><p>Missão.</p>
+       </div>
+    </table>
 </section>
 
+<section>
+    <table border="8" width="100%" height="5px" bgcolor="#FFFAFA">
+        <div class=""
+    </table>
+
+</section>
+                
+                
+             </div>
+        </table>
+    </section>
 
 
 
@@ -38,4 +103,5 @@
 </body>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
