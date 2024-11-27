@@ -8,22 +8,27 @@
     <title>Bootstrap -Teste final</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
+<style>
+    a{
+        text-decoration: none;
+    }
+</style>
 <body>
-    <section>
+    <section >
         <br>
         <div>
             <table border="8" width="100%" height="50px" bgcolor="#FFFAFA">
                 <tr align="center">
-                    <td><a href="index.html">HOME</a></td>
-                    <td><a href="fotos.html">FOTOS</a></td>
-                    <td><a href="quemsomos.html">QUEM SOMOS</a></td>
-                    <td><a href="contato.html">CONTATO</a></td>
+                    <td><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#index.html">HOME</a></td>
+                    <td><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#fotos">FOTOS</a></td>
+                    <td><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="quemsomos.html">QUEM SOMOS</a></td>
+                    <td><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#contatos">CONTATO</a></td>
                 </tr>
             </table>
         </div>
     </section>
 
+    <!--carrossel-->
     <section>
         <table border="8" width="100%" height="5px" bgcolor="#FFFAFA">
             <div id="carousel-de-imagens" class="carousel slide" data-bs-ride="carousel">
@@ -66,62 +71,82 @@
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carrossel-de-imagens"
                     data-bs-slide="next">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Próximo</span>
                 </button>
 
             </div>
         </table>
     </section>
+
+<!--imagem-->
+    <section id="fotos" class="d-flex justify-content-evenly p-5">
+       
+                <img src="visao-futurista.jpg" width="600px" height="400px" class="rounded float-start" alt="leão">
+                <img src="valores.jpg" width="600px" height="400px" class="rounded float-end" alt="cidade">
+          
+
+    </section>
+
+    <!--missao....-->
     <section>
-        <section>
-            <table border="8" width="100%" height="5px" bgcolor="#FFFAFA">
-                <div class="">
-                    <img src="visao-futurista.jpg" width="600px" height="600px" class="rounded float-start" alt="leão">
-                    <img src="valores.jpg" width="600px" height="600px" class="rounded float-end" alt="cidade">
-                </div>
-            </table>
-
-        </section>
-
-        <section>
-            <table border="8" width="100%" height="5px" bgcolor="#FFFAFA">
-                <div class="grid gap-3">
-                    <img src="Intergate-Blog-Missao-Visao-Valores.webp" width="1080px" height="600px"
-                        class="rounded fload-star" alt="leão">
-                    <p></p>
-                </div>
-            </table>
-        </section>
-        <section>
-            <table border="8" width="100%" height="5px" bgcolor="#FFFAFA">
-                <div class="">
-                    <img src="web.png" width="300px" height="300px" class="rounded p-3">
-                    <img src="seguranca-de-rede.jpg" width="300px" height="300px" class="rounded p-3">
-                    <img src="linux.jpg" width="300px" height="300px" class="rounded p-3">
-                    <img src="terra-empresas-manutencao-de-computadores-capa1.jpg" width="300px" height="300px"
-                        class="rounded p-3">
-                </div>
-            </table>
-        </section>
-        <hr>
-        <section>
-
-            <div class="card d-flex flex-row mb-2">
-                <img src="imagem-raul.jfif" alt="Bootstrap" width="100" height="100">
-
-                <div class="card-body">
-                    <h5 class="card-title">Raul Soares</h5>
-                    <p class="card-text">Curso Tecnico de Informática.</p>
-                    <a href="#" class="btn btn-primary">Faça sua inscrição.</a>
-                </div>
-        </section>
-        </div>
-
-
-        </div>
+        <div class="card-group p-5">
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Missão</h5>
+                <p class="card-text">Capacitar o aluno a trabalhar com o computador, realizando tarefas básicas essenciais, e mostrar os principais conceitos em informática e processamento de dados.</p>
+                
+              </div>
+            </div>
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Visão</h5>
+                <p class="card-text">A expectativa de quem está buscando recolocação no mercado de trabalho ou iniciando um novo negócio como empreendedor, transforma-se em superação, ao seguir o caminho certo.</p>
+                
+              </div>
+            </div>
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Valores</h5>
+                <p class="card-text">Comprometimento com o Sucesso do Aluno: Nosso maior compromisso é com o desenvolvimento completo de nossos alunos, garantindo que adquiram não apenas os conhecimentos técnicos, mas também a confiança necessária para aplicar suas habilidades no mundo real.</p>
+                
+              </div>
+            </div>
+          </div>
+    </section>
+<!--materias-->
+    <section>
+        <table border="8" width="100%" height="5px" bgcolor="#FFFAFA">
+            
+            <div class="p-5">
+                <img src="web.png" width="300px" height="300px" class="rounded p-3">
+                <img src="seguranca-de-rede.jpg" width="300px" height="300px" class="rounded p-3">
+                <img src="linux.jpg" width="300px" height="300px" class="rounded p-3">
+                <img src="terra-empresas-manutencao-de-computadores-capa1.jpg" width="300px" height="300px"
+                    class="rounded p-3">
+            </div>
         </table>
     </section>
+    <hr>
+    <section>
+<!--rodape-->
+        <div id="contatos" class="card d-flex flex-row mb-2">
+            <img src="imagem-raul.jfif" alt="Bootstrap" width="100" height="100">
+
+            <div class="card-body">
+                <h5 class="card-title">Raul Soares</h5>
+                <p class="card-text">Curso Tecnico de Informática.</p>
+                <a href="#" class="btn btn-primary">Faça sua inscrição.</a>
+            </div>
+    </section>
+    </div>
+
+
+
+
 
 
 
